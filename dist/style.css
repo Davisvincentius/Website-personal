@@ -1,0 +1,90 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+.skill-area {
+    font-family: sans-serif;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20%;
+}
+
+.skill {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.skill-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: #99f6e4;
+    height: 25px;
+    z-index: -1;
+    border-radius: 100px;
+    position: absolute;
+}
+
+.skill-fill {
+    background-color: #14b8a6;
+    height: 25px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+    overflow: hidden;
+}
+
+.skill-percent {
+    font-size: 30px;
+}
+
+.html {
+    animation: html 2s ease-in-out;
+    width: 90%;
+}
+
+.css {
+    animation: css 2s ease-in-out;
+    width: 85%;
+}
+
+.js {
+    animation: js 2s ease-in-out;
+    width: 70%;
+}
+
+@keyframes html {
+    from {
+        width: 0;
+    }
+    to {
+        width: 90%;
+    }
+}
+@keyframes css {
+    from {
+        width: 0;
+    }
+    to {
+        width: 85%;
+    }
+}
+@keyframes js {
+    from {
+        width: 0;
+    }
+    to {
+        width: 70%;
+    }
+}
